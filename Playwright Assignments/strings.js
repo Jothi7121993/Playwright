@@ -13,8 +13,8 @@ function reverseString(str) {
     reversed += str[i];
   }
   
-  console.log(`Original string: "${str}"`);
-  console.log(`Reversed string: "${reversed}"`);
+  console.log("Original string: " + str);
+  console.log("Reversed string: " + reversed);
   
   return reversed;
 }
@@ -28,10 +28,10 @@ function isPalindrome(str) {
   
   // Compare original and reversed string (case-insensitive)
   if (str.toLowerCase() === reversedStr.toLowerCase()) {
-    console.log(`"${str}" is a PALINDROME\n`);
+    console.log("\"" + str + "\" is a PALINDROME\n");
     return true;
   } else {
-    console.log(`"${str}" is NOT a palindrome\n`);
+    console.log("\"" + str + "\" is NOT a palindrome\n");
     return false;
   }
 }
